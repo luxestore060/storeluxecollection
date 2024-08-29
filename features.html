@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <script src="https://kit.fontawesome.com/983e89e942.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Luxe Collection Store - Sourcing</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .sourcing {
+            padding: 10px 100px;
+        }
+
+        .sourcing>div {
+            margin-top: 20px;
+        }
+
+        .sourcing p {
+            font-size: 20px;
+            color: rgb(100, 99, 99);
+        }
+
+        .sourcing p strong {
+            font-weight: bolder;
+        }
+
+        .dot::before {
+            content: '•';
+            margin-right: 10px;
+            color: rgb(100, 99, 99);
+            font-size: 20px;
+            margin-left: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- i am navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html#">Luxe Collection Store</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="">Sourcing</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Products
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item"
+                            href="https://drive.google.com/drive/folders/1AQjaHbarySlqYD7ketlA0fyhtmHMxaIJ?usp=drive_link/https://drive.google.com/drive/folders/14fp7T-mm3PCi2b_Fcaan-zYAZm0oM01_?usp=drive_link">Bags/Wellets</a>
+                        <a class="dropdown-item"
+                            href="https://drive.google.com/drive/folders/1tSF6SjoiTePUjqlo1LdcAS1FxYJUbPoX?usp=drive_link">Shouse/Belt</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item"
+                            href="https://drive.google.com/drive/folders/1-ykteiuP8VKxTxHks2deo43z7XhasHNv?usp=drive_link">Jewellert/Belt</a>
+                        <a class="dropdown-item"
+                            href="https://drive.google.com/drive/folders/15KbO29xokYt7YTIZKb0J8iSX0zl_A43y?usp=drive_link">Watch/Glasses</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item"
+                            href="https://drive.google.com/drive/folders/1H2LCbPH0ZaCtsFD10X5jicnDRQAz59pS?usp=drive_link">Leather Jackets</a>
+                        <a class="dropdown-item"
+                            href="https://drive.google.com/drive/folders/1a88_PshA4WfavwLpzh1ug2Acv9REK5VW?usp=drive_link">Winter
+                            Stock</a>
+                            <div class="dropdown-divider"></div>
+                        <a class="dropdown-item"
+                            href="https://drive.google.com/drive/folders/1LtATAD5o0cgfyEuzonCSpymeQEmhmYxf?usp=drive_link">Army Hats</a>
+                        <a class="dropdown-item"
+                            href="https://drive.google.com/drive/folders/1CprQ-RAAYl2xQrJs-LuXozfB8G4_ZJ1L?usp=drive_link">Leather Top Hats</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="contact.html?#">Contact Us</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+            </form>
+            <div class="mx-2">
+                <button class="btn btn-danger" data-toggle="modal" data-target="#loginModal">Login</button>
+                <button class="btn btn-danger" data-toggle="modal" data-target="#signupModal">SignUp</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- login button navbar  -->
+    <!-- Button trigger modal navbar-->
+
+    <!-- Modal navbar-->
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Login to Luxe Collection Store</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="Enter email">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                                else.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1"
+                                placeholder="Password">
+                        </div>
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Login</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- signup  navbar-->
+    <!-- Button trigger modal navbar -->
+
+    <!-- Modal navbar-->
+    <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="signupModalLabel">Get an Luxe Collection Store</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputFullName">Full Name</label>
+                            <input type="name" class="form-control" id="exampleInputFullName"
+                                aria-describedby="nameHelp" placeholder="Enter name">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="Enter email">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                                else.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1"
+                                placeholder="Password">
+                        </div>
+                        <div class="form-group">
+                            <label for="cexampleInputPassword1">Confirm Password</label>
+                            <input type="password" class="form-control" id="cexampleInputPassword1"
+                                placeholder="Password">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Create an Acount</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- I AM SOURCING -->
+    <div class="sourcing">
+        <div class="first-sourcing">
+            <p>Welcome to Luxe Collection Store, where we offer unparalleled sourcing services for high-quality, branded
+                replica products. From our state-of-the-art warehouse in Dubai, we connect you with exceptional
+                craftsmanship and luxury items that enhance your e-commerce offerings.</p>
+        </div>
+        <div class="sec-sourcing">
+            <p><strong>Our Product Range:</strong> Discover a diverse selection of premium products, including:</p>
+        </div>
+        <div class="third-sourcing">
+            <p><strong class="dot">Bags:</strong> Stylish and functional bags for every occasion.</p>
+            <p><strong class="dot">Shoes:</strong> Trendy and comfortable footwear for men, women, and children.</p>
+            <p><strong class="dot">Watches:</strong> Elegant timepieces that make a statement.</p>
+            <p><strong class="dot">Hats:</strong> Fashionable hats that complement any outfit.</p>
+            <p><strong class="dot">Heels:</strong> High-quality heels that offer both style and comfort.</p>
+            <p><strong class="dot">Winter Stock:</strong> Essential winter wear to keep you warm and stylish.</p>
+            <p><strong class="dot">Belts:</strong> Premium belts that enhance your look.</p>
+            <p><strong class="dot">Wallets:</strong> Elegant and functional wallets for your convenience.</p>
+            <p><strong class="dot">Glasses:</strong> Stylish eyewear to complete your ensemble.</p>
+            <p><strong class="dot">Jewelry:</strong> Luxurious jewelry pieces that add a touch of sophistication.</p>
+            <p><strong class="dot">Leather Jackets:</strong> Durable and stylish leather jackets that offer both warmth and fashion.</p>
+            <p><strong class="dot">Leather Top Hats:</strong> Handcrafted leather top hats with unique designs that stand out.</p>
+            <p><strong class="dot">Army Hats:</strong> Rugged and stylish army hats, perfect for a bold and adventurous look.</p>
+            <p><strong class="dot">Football(Soccer Balls):</strong> High-quality footballs designed for performance and durability.</p>
+        </div>
+        <div class="forth-sourcing">
+            <p><strong>Why Choose Luxe Collection Store?</strong></p>
+        </div>
+        <div class="fifth-sourcing">
+            <p><strong class="dot">High Quality:</strong> Our products are crafted to meet the highest standards of
+                quality.</p>
+            <p><strong class="dot">Branded Replicas:</strong> Enjoy luxury and style with our premium replica items.</p>
+            <p><strong class="dot">Customer Reviews:</strong> Read our customer reviews to see how we consistently
+                exceed expectations.</p>
+            <p><strong class="dot">Dubai Warehouse:</strong> Our products are sourced from our well-established
+                warehouse in Dubai, ensuring reliable and efficient delivery.</p>
+        </div>
+        <div class="six-sourcing">
+            <p><strong>Get Started with Luxe Collection Store</strong></p>
+            <p>Enhance your e-commerce business with our top-quality, branded replica products. Contact us today to
+                explore our range and discover how Luxe Collection Store can elevate your product offerings and boost
+                your sales. With Luxe Collection Store, luxury and excellence are just a partnership away.</p>
+        </div>
+    </div>
+
+        <!-- i am footer  -->
+    <!-- Remove the container if you want to extend the Footer to full width. -->
+    <div class="container-fluid p-0">
+
+        <footer class="text-white text-lg-start bg-dark">
+            <!-- Grid container -->
+            <div class="container p-4">
+                <!--Grid row-->
+                <div class="row mt-4">
+                    <!--Grid column-->
+                    <div class="col-lg-4 col-md-12 mb-4 mb-md-0 text-start">
+                        <h5 class="text-uppercase mb-4">About company</h5>
+
+                        <p>
+                            At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                            voluptatum deleniti atque corrupti.
+                        </p>
+
+                        <p>
+                            Blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias.
+                        </p>
+
+                        <div class="mt-4">
+                            <!-- Facebook -->
+                            <a href="https://www.facebook.com/zainulabidean.zainulabidean.1?mibextid=ZbWKwL"
+                                type="button" class="btn btn-floating btn-light btn-lg"
+                                style="background-color: #343a40; color: white;"><i class="fab fa-facebook-f"></i></a>
+                            <!-- Dribbble -->
+                            <a href="https://www.instagram.com/luxecollectionstor/" type="button"
+                                class="btn btn-floating btn-light btn-lg"
+                                style="background-color: #343a40; color: white;"><i class="fab fa-instagram"></i></a>
+                            <!-- Twitter -->
+                            <a href="https://www.instagram.com/luxecollectionstor/" type="button"
+                                class="btn btn-floating btn-light btn-lg"
+                                style="background-color: #343a40; color: white;"><i class="fab fa-twitter"></i></a>
+                            <!-- Google + -->
+                            <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox" type="button"
+                                class="btn btn-floating btn-light btn-lg"
+                                style="background-color: #343a40; color: white;"><i
+                                    class="fab fa-google-plus-g"></i></a>
+                            <!-- Linkedin -->
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase mb-4 pb-1">Search something</h5>
+
+                        <div class="form-outline form-white mb-4">
+                            <input type="text" id="formControlLg" class="form-control form-control-lg" />
+                            <label class="form-label" for="formControlLg">Search</label>
+                        </div>
+
+                        <ul class="fa-ul" style="margin-left: 1.65em;">
+                            <li class="mb-3">
+                                <span class="fa-li"><i class="fas fa-home"></i></span><span class="ms-2">UAE, 000-999,
+                                    Dubai</span>
+                            </li>
+                            <li class="mb-3">
+                                <span class="fa-li"><i class="fas fa-envelope"></i></span><span
+                                    class="ms-2">storeluxecollection0@gmail.com</span>
+                            </li>
+                            <li class="mb-3">
+                                <span class="fa-li"><i class="fas fa-phone"></i></span><span class="ms-2">+92 346 699
+                                    0834</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-4 col-md-6 mb-4 mb-md-0 text-start">
+                        <h5 class="text-uppercase mb-4">Opening hours</h5>
+
+                        <table class="table text-white">
+                            <tbody class="fw-normal">
+                                <tr>
+                                    <td>Mon - Thu:</td>
+                                    <td>8am - 8pm</td>
+                                </tr>
+                                <tr>
+                                    <td>Fri - Sat:</td>
+                                    <td>9am - 10pm</td>
+                                </tr>
+                                <tr>
+                                    <td>Sunday:</td>
+                                    <td>12pm - 10pm</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!--Grid column-->
+                </div>
+                <!--Grid row-->
+            </div>
+            <!-- Grid container -->
+
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                © 2020 Copyright:
+                <a class="text-white"
+                    href="https://drive.google.com/drive/folders/1pGaBJUEqlwNO48e1og0Ld7kBOUe7sYuN">LuxeCollectionStore.com</a>
+            </div>
+            <!-- Copyright -->
+        </footer>
+
+    </div>
+    <!-- End of .container -->
+
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
